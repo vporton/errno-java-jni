@@ -11,12 +11,8 @@ extern "C" {
 #define org_portonvictor_errno_Errno_serialVersionUID -3042686055658047285LL
 #undef org_portonvictor_errno_Errno_serialVersionUID
 #define org_portonvictor_errno_Errno_serialVersionUID 4980196508277280342LL
-/*
- * Class:     org_portonvictor_errno_Errno
- * Method:    getMessage
- * Signature: ()Ljava/lang/String;
- */
-JNIEXPORT jstring JNICALL Java_org_portonvictor_errno_Errno_getMessage
+
+JNIEXPORT jbyteArray JNICALL Java_org_portonvictor_errno_Errno_getMessageImpl
   (JNIEnv *, jobject);
 
 #ifdef __cplusplus
