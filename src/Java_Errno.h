@@ -15,6 +15,9 @@ extern "C" {
 JNIEXPORT jbyteArray JNICALL Java_org_portonvictor_errno_Errno_getMessageImpl
   (JNIEnv *, jobject);
 
+JNIEXPORT jint JNICALL Java_org_portonvictor_errno_Errno_getErrno
+  (JNIEnv *, jclass);
+
 #ifdef __cplusplus
 }
 #endif

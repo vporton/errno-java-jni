@@ -36,3 +36,9 @@ jbyteArray JNICALL Java_org_portonvictor_errno_Errno_getMessageImpl
     (*env)->SetByteArrayRegion(env, ret, 0, len, (jbyte*)str);
     return ret;
 }
+
+JNIEXPORT jint JNICALL Java_org_portonvictor_errno_Errno_getErrno
+  (JNIEnv * env, jclass kclass)
+{
+    return errno;
+}
